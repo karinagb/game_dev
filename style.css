@@ -14,8 +14,8 @@ body {
 
 header {
 	color: #ffffff;
-	background-color: cornflowerblue;
-	padding: 0 30px 40px;
+	background-image: linear-gradient(#6f7dfb, #28328f);
+	padding: 0 30px 0;
 }
 
 #menu_bar {
@@ -50,7 +50,12 @@ header {
 	background-color: rgb(16, 10, 88);
 }
 
-#learn h1 {
+#learn {
+	display: flex;
+	flex-direction: column;
+}
+
+.learn_title {
 	font-family: "Raleway";
 	font-size: 36px;
 	font-weight: 900;
@@ -59,13 +64,14 @@ header {
 	text-align: left;
 }
 
-#learn p {
+.learn_p {
 	font-family: "Poppins";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 32px;
 	letter-spacing: 0em;
 	text-align: left;
+	padding: 20px 0;
 }
 
 #learn button {
@@ -86,8 +92,60 @@ header {
 	margin: 15px;
 }
 
+.numbers_photo {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	padding: 0;
+}
+
+#learn img {
+	width: 306px;
+	margin-right: -300px;
+}
+.numbers {
+	padding: 110px 0 60px;
+}
+
+.numbers h1 {
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 38px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #023047;
+}
+
+.numbers p {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #023047;
+}
+
+.students_enrolled {
+	background-color: #ffff;
+	border-color: transparent;
+	border-radius: 30px;
+
+	margin: 0;
+	padding: 10px 30px 10px;
+}
+
+.rating {
+	background-color: #ffff;
+	border-color: transparent;
+	border-radius: 30px;
+	margin: 70px 0 0;
+	padding: 10px 20px 10px;
+}
+
 #students {
-	padding: 40px 30px;
+	padding: 80px 30px;
 }
 
 #students h1 {
@@ -108,6 +166,7 @@ header {
 	letter-spacing: 0em;
 	text-align: left;
 	color: #023047;
+	padding: 20px 0 20px;
 }
 
 .comments h2 {
@@ -129,7 +188,7 @@ header {
 	letter-spacing: 0em;
 	text-align: left;
 	color: #023047;
-	padding: 0 30px;
+	padding: 20px 30px 20px;
 }
 
 .comments h4 {
@@ -146,7 +205,7 @@ header {
 .comment_1 {
 	border-radius: 24px;
 	box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 .comment_1 h2 {
@@ -157,14 +216,13 @@ header {
 .comment_2 {
 	border-radius: 24px;
 	box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 .comment_2 h2 {
 	background-color: #da722c;
 	border-radius: 30px;
 }
-
 
 #students button {
 	font-family: "Poppins";
@@ -184,11 +242,104 @@ header {
 	margin: 15px;
 }
 
-
 #courses {
-	padding: 40px 30px;
+	background-image: linear-gradient(#6f7dfb, #28328f);
+	padding: 40px 0;
+}
+
+#courses img {
+	width: 352px;
+	padding: 0;
+	margin: 0;
+}
+
+#courses h1 {
+	font-family: Raleway;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #ffff;
+}
+
+#courses h2 {
+	font-family: Raleway;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #023047;
+}
+
+#courses p {
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.game_design,
+.game_engine {
+	background-color: #ffffff;
+	border-radius: 50px;
+	margin: 70px 0 50px;
+	padding: 0 30px 30px;
+}
+
+.course_name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#courses button {
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #ffffff;
+
+	background-color: #da722c;
+	border-color: transparent;
+	border-radius: 25px;
+	width: 171px;
+
+	padding: 12px;
+	margin: 15px;
 }
 
 #app {
 	padding: 40px 30px;
+}
+
+#app h1 {
+	font-family: Raleway;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #023047;
+}
+
+#app p {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #023047;
+	padding: 20px;
+}
+
+#app img {
+	margin: 10px 0;
 }
