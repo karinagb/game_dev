@@ -12,13 +12,12 @@ body {
 	margin: 0;
 }
 
-header {
+.background_container {
 	color: #ffffff;
 	background-image: linear-gradient(#6f7dfb, #28328f);
-	padding: 0 30px 0;
 }
 
-#menu_bar {
+.menu_bar {
 	font-family: "Raleway";
 	font-size: 36px;
 	font-weight: 900;
@@ -26,11 +25,11 @@ header {
 	letter-spacing: 0em;
 
 	height: 100px;
-	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 30px 0;
 }
 
 .menu_button {
@@ -53,6 +52,10 @@ header {
 #learn {
 	display: flex;
 	flex-direction: column;
+}
+
+.learn_contained {
+	padding: 0 30px 0;
 }
 
 .learn_title {
@@ -92,11 +95,11 @@ header {
 	margin: 15px;
 }
 
-.numbers_photo {
+.stadistics_photo {
 	display: flex;
 	flex-direction: row;
 	overflow: hidden;
-	padding: 0;
+	padding: 0 0 0 30px;
 }
 
 #learn img {
@@ -147,6 +150,9 @@ header {
 }
 
 #students {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 80px 30px;
 }
 
@@ -171,6 +177,23 @@ header {
 	padding: 20px 0 20px;
 }
 
+.comments {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.comment_line {
+	position: absolute;
+	height: 550px;
+	width: 35px;
+	border-radius: 20px;
+	background-color: #023047;
+	margin-left: 55px;
+	align-self: flex-start;
+	z-index: -1;
+}
+
 .comments h2 {
 	font-family: "Raleway";
 	font-size: 18px;
@@ -179,7 +202,7 @@ header {
 	letter-spacing: 0em;
 	text-align: left;
 	color: #ffffff;
-	padding: 30px;
+	border-radius: 30px;
 }
 
 .comments h3 {
@@ -191,6 +214,7 @@ header {
 	text-align: left;
 	color: #023047;
 	padding: 20px 30px 20px;
+	margin: 0;
 }
 
 .comments h4 {
@@ -201,29 +225,41 @@ header {
 	letter-spacing: 0em;
 	text-align: left;
 	color: #023047;
-	padding: 0 30px;
+	padding: 0 30px 30px;
+	margin: 0;
 }
 
-.comment_1 {
+.comment_1, .comment_2{
 	border-radius: 24px;
 	box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-	margin: 30px 0;
+	margin: 25px;
+	width: 100%;
 }
 
 .comment_1 h2 {
 	background-color: #6f7dfb;
-	border-radius: 30px;
-}
-
-.comment_2 {
-	border-radius: 24px;
-	box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-	margin: 30px 0;
+	padding: 30px;
+	margin: 0;
 }
 
 .comment_2 h2 {
 	background-color: #da722c;
-	border-radius: 30px;
+	padding: 30px 60px;
+	margin: 0;
+}
+
+.student_image_1 {
+	position: absolute;	
+	margin-top: 90px;
+	margin-left: 40px;
+	width: 110px;
+}
+
+.student_image_2 {
+	position: absolute;	
+	margin-top: 75px;
+	margin-left: 40px;
+	width: 110px;
 }
 
 #students button {
@@ -242,11 +278,15 @@ header {
 
 	padding: 12px;
 	margin: 15px;
+	align-self: flex-end;
 }
 
 #courses {
 	background-image: linear-gradient(#6f7dfb, #28328f);
-	padding: 40px 0;
+	padding: 0 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #courses img {
@@ -263,6 +303,7 @@ header {
 	letter-spacing: 0em;
 	text-align: center;
 	color: #ffff;
+	padding: 20px;
 }
 
 #courses h2 {
@@ -282,13 +323,14 @@ header {
 	line-height: 24px;
 	letter-spacing: 0em;
 	text-align: left;
+	color: #023047;
 }
 
 .game_design,
 .game_engine {
 	background-color: #ffffff;
 	border-radius: 50px;
-	margin: 70px 0 50px;
+	margin: 0 0 70px;
 	padding: 0 30px 30px;
 }
 
@@ -314,7 +356,8 @@ header {
 	width: 171px;
 
 	padding: 12px;
-	margin: 15px;
+	margin: 0 30px 0 0;
+	align-self: flex-end;
 }
 
 #app {
@@ -353,7 +396,7 @@ footer {
 
 	background-color: #070917;
 	margin: 0;
-	padding: 20px 0 20px;
+	padding: 40px 0;
 	width: 100%;
 }
 
@@ -365,7 +408,7 @@ footer h1 {
 	letter-spacing: 0em;
 	text-align: center;
 	color: #da722c;
-	padding: 30px 0 5px;
+	padding: 10px;
 	margin: 0;
 }
 
@@ -375,6 +418,7 @@ footer h1 {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	padding: 10px;
 }
 
 .item {
@@ -387,9 +431,28 @@ footer h1 {
 	color: #ffff;
 }
 
+.social_networks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px;
+}
+
 footer input {
-	height: 20px;
-	margin: 20px;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: gray;
+
+	border-color: none;
+	border-radius: 10px;
+	height: 15px;
+	margin: 10px;
+	width: 300px;
+	padding: 15px;
 }
 
 footer button {
@@ -407,8 +470,19 @@ footer button {
 	background-color: #023047;
 	border-color: transparent;
 	border-radius: 15px;
-	width: 171px;
+	width: 150px;
 
-	padding: 12px;
+	padding: 5px;
 	margin: 15px;
+}
+
+footer p {
+	font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+
+	color: #ffff;
 }

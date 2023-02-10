@@ -18,42 +18,44 @@
 	</head>
 
 	<body>
-		<header>
-			<section id="menu_bar">
+		<div class="background_container"> 
+
+			<header class="menu_bar">
 				<h1>GD.</h1>
 				<div class="menu_button">
 					<div class="menu_button_line"></div>
 					<div class="menu_button_line"></div>
 				</div>
-			</section>
-
-			<section id="learn">
-				<h1 class="learn_title">Learn the art of Game Dev</h1>
-				<p class="learn_p">
-					This is a comprehensive course on Game Development. You will learn
-					everything from generating an idea to publishing your games to
-					different platforms.
-				</p>
-				<button>Enrol Now</button>
-
-				<div class="numbers_photo">
-					<div class="numbers">
-						<div class="students_enrolled">
-							<h1>32K</h1>
-							<p>Students Enrolled</p>
-						</div>
-						<div class="rating">
-							<h1>4.7</h1>
-							<p>Overall Rating</p>
-						</div>
-					</div>
-					<img src=".\images\hero_image_1.png" alt="girl_student" />
-				</div>
-
-			</section>
-		</header>
+			</header>
 
 		<main>
+				<section id="learn">
+					<div class="learn_contained"> 
+						<h1 class="learn_title">Learn the art of Game Dev</h1>
+						<p class="learn_p">
+							This is a comprehensive course on Game Development. You will learn
+							everything from generating an idea to publishing your games to
+							different platforms.
+						</p>
+						<button>Enrol Now</button>
+					</div>
+					<div class="stadistics_photo">
+						<div class="numbers">
+							<div class="students_enrolled">
+								<h1>32K</h1>
+								<p>Students Enrolled</p>
+							</div>
+							<div class="rating">
+								<h1>4.7</h1>
+								<p>Overall Rating</p>
+							</div>
+						</div>
+						<img src=".\images\hero_image_1.png" alt="girl_student" />
+					</div>
+				</section>
+		
+			</div>
+		
 			<section id="students">
 				<h1>What our students say</h1>
 				<p>
@@ -61,19 +63,23 @@
 					the projects. You will also have access to a private Discord channel
 					where you can discuss your doubts.
 				</p>
+				
 				<div class="comments">
+					
 					<div class="comment_1">
+						<img class="student_image_1" src=".\images\student_image_1.png" alt="student_image"/>
 						<h2>This is a great course. It helped me a lot. Thank you :)</h2>
 						<h3>Jane Cooper</h3>
 						<h4>Developer, Sony</h4>
-						<img />
 					</div>
+
 					<div class="comment_2">
+						<img class="student_image_2" src=".\images\student_image_2.png" alt="student_image"/>
 						<h2>Amazing Work! Well done!</h2>
 						<h3>Jacob Jones</h3>
 						<h4>Designer, Facebook</h4>
-						<img />
 					</div>
+					<div class="comment_line"></div>
 				</div>
 				<button>Learn More</button>
 			</section>
@@ -128,9 +134,14 @@
 			<div class="contact_us">
 				<h1>Contact Us</h1>
 				<div class="item">contact@email.com</div>
+				<div class="social_networks"> 
+					<img img src=".\images\social_networks_1.png" alt="logo"/>
+					<img img src=".\images\social_networks_2.png" alt="logo"/>
+				</div>
 			</div>
-			<input />
+			<input type="text" placeholder="Email Address"/>
 			<button>Subscribe</button>
+			<p>This website is developed by GTCoding © 2021</p>
 		</footer>
 	</body>
 </html>
