@@ -20,12 +20,22 @@
 	<body>
 		<div class="background_container"> 
 
-			<header class="menu_bar">
-				<h1>GD.</h1>
-				<div class="menu_button">
-					<div class="menu_button_line"></div>
-					<div class="menu_button_line"></div>
+			<header class="menu">
+
+				<div class="menu_logo">GD.</div>
+				<div class="menu_lines">
+					<div class="menu_line"></div>
+					<div class="menu_line"></div>
 				</div>
+
+				<div class="menu_logo_desktop">SK.</div>
+				<div class="menu_items">
+					<div class="menu_item">About</div>
+					<div class="menu_item">Services</div>
+					<div class="menu_item">Our Work</div>
+					<button class="menu_button">Enrol Now</button>
+				</div>
+
 			</header>
 
 		<main>
@@ -57,13 +67,14 @@
 			</div>
 		
 			<section id="students">
-				<h1>What our students say</h1>
-				<p>
-					All students get access to all the videos and also the source code of
-					the projects. You will also have access to a private Discord channel
-					where you can discuss your doubts.
-				</p>
-				
+				<div class="title_p"> 
+					<h1>What our students say</h1>
+					<p>
+						All students get access to all the videos and also the source code of
+						the projects. You will also have access to a private Discord channel
+						where you can discuss your doubts.
+					</p>
+				</div>
 				<div class="comments">
 					
 					<div class="comment_1">
@@ -88,7 +99,8 @@
 				<h1>Our Courses</h1>
 
 				<div class="game_design">
-					<img src=".\images\courses_image_1.png" alt="courses_image" />
+					<img class="courses_image" src=".\images\courses_image_1.png" alt="courses_image" />
+					<img class="courses_image_tablet" src=".\images\courses_image_1_tablet.png" alt="courses_image" />
 					<div class="course_name">
 						<h2>Game Design Essentials</h1>
 						<p>8 HRS</p>
@@ -96,7 +108,8 @@
 				</div>
 
 				<div class="game_engine">
-					<img src=".\images\courses_image_2.png" alt="courses_image" />
+					<img class="courses_image" src=".\images\courses_image_2.png" alt="courses_image" />
+					<img class="courses_image_tablet" src=".\images\courses_image_2_tablet.png" alt="courses_image" />
 					<div class="course_name">
 						<h2>Unity Game Engine Fundamentals</h1>
 						<p>8 HRS</p>
@@ -109,9 +122,10 @@
 			<section id="app">
 				<h1>Get our App</h1>
 				<p>You can use our App for better experience on smartphones</p>
-				
+				<div class="app_images"> 
 					<img src=".\images\app_image_1.png" alt="app_image"/>
 					<img src=".\images\app_image_2.png" alt="app_image"/>
+				</div>
 				
 			</section>
 		</main>
@@ -124,24 +138,27 @@
 				<div class="item">Privacy Policy</div>
 				<div class="item">Terms & Conditions</div>
 			</div>
+
 			<div class="course">
 				<h1>Course</h1>
 				<div class="item">Log In</div>
 				<div class="item">Download</div>
 				<div class="item">All Courses</div>
-		
 			</div>
+
 			<div class="contact_us">
 				<h1>Contact Us</h1>
 				<div class="item">contact@email.com</div>
 				<div class="social_networks"> 
-					<img img src=".\images\social_networks_1.png" alt="logo"/>
-					<img img src=".\images\social_networks_2.png" alt="logo"/>
+					<img src=".\images\social_networks_1.png" alt="logo"/>
+					<img src=".\images\social_networks_2.png" alt="logo"/>
 				</div>
+				<input type="text" placeholder="Email Address"/>
+				<button>Subscribe</button>	
+				<p>This website is developed by GTCoding © 2021</p>
 			</div>
-			<input type="text" placeholder="Email Address"/>
-			<button>Subscribe</button>
-			<p>This website is developed by GTCoding © 2021</p>
+
+
 		</footer>
 	</body>
 </html>
