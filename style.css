@@ -67,8 +67,13 @@ body {
 .learn_contained {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: left;
 	padding: 0 30px 0;
+}
+
+.learn_mobile_tablet {
+	display: flex;
+	flex-direction: column;
 }
 
 .learn_title {
@@ -106,7 +111,11 @@ body {
 
 	align-self: flex-start;
 	padding: 12px;
-	margin: 15px;
+	margin: 0;
+}
+
+.learn_desktop {
+	display: none;
 }
 
 .stadistics_photo {
@@ -163,6 +172,10 @@ body {
 	padding: 10px 20px 10px;
 }
 
+.numbers_desktop {
+	display: none;
+}
+
 #students {
 	display: flex;
 	flex-direction: column;
@@ -189,6 +202,10 @@ body {
 	text-align: left;
 	color: #023047;
 	padding: 20px 0 20px;
+}
+
+.students_title_p_desktop {
+	display: none;
 }
 
 .comments {
@@ -246,7 +263,7 @@ body {
 
 .comment_1,
 .comment_2 {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	border-radius: 24px;
 	box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
 	margin: 25px;
@@ -279,7 +296,7 @@ body {
 	width: 110px;
 }
 
-#students button {
+.students_button {
 	font-family: "Poppins";
 	font-size: 16px;
 	font-weight: 700;
@@ -316,8 +333,7 @@ body {
 	display: none;
 }
 
-
-#courses h1 {
+.courses_h1 {
 	font-family: Raleway;
 	font-size: 30px;
 	font-weight: 900;
@@ -327,6 +343,11 @@ body {
 	color: #ffff;
 	padding: 20px;
 }
+
+.courses_h1_desktop {
+	display: none;
+}
+
 
 #courses h2 {
 	font-family: Raleway;
@@ -357,7 +378,6 @@ body {
 	border-radius: 50px;
 	margin: 0 0 70px;
 	padding: 0 0px 30px;
-	
 }
 
 .game_engine {
@@ -365,7 +385,6 @@ body {
 	border-radius: 50px;
 	margin: 0 0 70px;
 	padding: 0 0px 30px;
-	
 }
 
 .course_name {
@@ -582,7 +601,7 @@ footer p {
 		padding: 10px 30px;
 	}
 
-	.menu_button {
+	.menu_button_tablet {
 		font-family: "Poppins";
 		font-size: 16px;
 		font-weight: 700;
@@ -599,10 +618,13 @@ footer p {
 		padding: 5px;
 	}
 
+	.menu_button_desktop {
+		display: none;
+	}
+
 	#learn {
 		display: flex;
 		flex-direction: column;
-	
 	}
 
 	.learn_contained {
@@ -621,7 +643,6 @@ footer p {
 		text-align: left;
 		margin: 0;
 		margin-top: 50px;
-		
 	}
 
 	.learn_p {
@@ -632,7 +653,6 @@ footer p {
 		letter-spacing: 0em;
 		text-align: left;
 		margin: 0px;
-		
 	}
 
 	#learn button {
@@ -651,7 +671,7 @@ footer p {
 
 		align-self: flex-start;
 		padding: 12px;
-		margin: 15px;
+		margin: 0;
 	}
 
 	.stadistics_photo {
@@ -677,7 +697,7 @@ footer p {
 		line-height: 45px;
 		letter-spacing: 0em;
 		text-align: center;
-		
+
 		color: #023047;
 		margin: 0;
 	}
@@ -691,7 +711,6 @@ footer p {
 		text-align: center;
 		color: #023047;
 		margin: 0;
-
 	}
 
 	.students_enrolled {
@@ -710,7 +729,6 @@ footer p {
 		margin: 70px 0 0;
 		padding: 15px 25px 15px;
 	}
-
 
 	#students {
 		display: flex;
@@ -741,6 +759,10 @@ footer p {
 		padding: 20px 0 20px;
 	}
 
+	.students_title_p_desktop {
+		display: none;
+	}
+
 	.comments {
 		display: flex;
 		flex-direction: column;
@@ -765,7 +787,7 @@ footer p {
 		line-height: 27px;
 		letter-spacing: 0em;
 		text-align: left;
-		
+
 		color: #ffffff;
 		border-radius: 30px;
 	}
@@ -777,7 +799,7 @@ footer p {
 		line-height: 29px;
 		letter-spacing: 0em;
 		text-align: left;
-		
+
 		color: #023047;
 		padding: 20px 30px 20px;
 		margin: 0;
@@ -790,7 +812,7 @@ footer p {
 		line-height: 22px;
 		letter-spacing: 0em;
 		text-align: left;
-		
+
 		color: #023047;
 		padding: 0 30px 30px;
 		margin: 0;
@@ -830,7 +852,7 @@ footer p {
 		width: 130px;
 	}
 
-	#students button {
+	.students_button {
 		font-family: Poppins;
 		font-size: 16px;
 		font-weight: 700;
@@ -869,8 +891,7 @@ footer p {
 		margin: 0;
 	}
 
-
-	#courses h1 {
+	.courses_h1 {
 		font-family: Raleway;
 		font-size: 40px;
 		font-weight: 900;
@@ -882,6 +903,10 @@ footer p {
 		margin: 0px;
 	}
 
+	.courses_h1_desktop {
+		display: none;
+	}
+
 	#courses h2 {
 		font-family: Raleway;
 		font-size: 30px;
@@ -889,7 +914,7 @@ footer p {
 		line-height: 45px;
 		letter-spacing: 0em;
 		text-align: left;
-		
+
 		color: #023047;
 		padding-right: 0;
 		margin: 0;
@@ -902,8 +927,7 @@ footer p {
 		line-height: 24px;
 		letter-spacing: 0em;
 		text-align: right;
-		
-		
+
 		color: #023047;
 		margin: 0;
 		width: 120px;
@@ -914,7 +938,7 @@ footer p {
 		background-color: #ffffff;
 		border-radius: 50px;
 		margin: 0 70px 70px;
-		padding: 0 30px; 
+		padding: 0 30px;
 	}
 
 	.course_name {
@@ -969,17 +993,17 @@ footer p {
 		line-height: 32px;
 		letter-spacing: 0em;
 		text-align: center;
-			
+
 		color: #023047;
 		padding: 0px;
 		margin: 20px;
 	}
 
-.app_images {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
+	.app_images {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	#app img {
 		width: 310px;
@@ -1094,85 +1118,135 @@ footer p {
 	}
 }
 
-
-
-
-
-
-
-
-
 @media (min-width: 1024px) {
 	.background_container {
 		color: #ffffff;
 		background-image: linear-gradient(#6f7dfb, #28328f);
 	}
 
-	.menu_bar {
-		font-family: "Raleway";
-		font-size: 36px;
-		font-weight: 900;
-		line-height: 42px;
-		letter-spacing: 0em;
-
-		height: 100px;
+	.menu {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 30px 0;
+		padding: 0 60px 0;
+		height: 100px;
 	}
 
-	.menu_button {
-		height: 20px;
-		width: 40px;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-content: center;
-	}
-
-	.menu_button_line {
-		height: 3px;
-		width: 25px;
-		border-radius: 10px;
-		background-color: rgb(16, 10, 88);
-	}
-
-	#learn {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.learn_contained {
-		padding: 0 30px 0;
-	}
-
-	.learn_title {
-		font-family: "Raleway";
-		font-size: 36px;
+	.menu_logo {
+		font-family: Raleway;
+		font-size: 40px;
 		font-weight: 900;
-		line-height: 42px;
+		line-height: 47px;
 		letter-spacing: 0em;
 		text-align: left;
 	}
 
-	.learn_p {
-		font-family: "Poppins";
+	.menu_lines {
+		display: none;
+	}
+
+	.menu_line {
+		display: none;
+	}
+
+	.menu_logo_desktop {
+		display: none;
+	}
+
+	.menu_items {
+		font-family: Poppins;
 		font-size: 16px;
-		font-weight: 400;
-		line-height: 32px;
+		font-weight: 700;
+		line-height: 24px;
 		letter-spacing: 0em;
 		text-align: left;
-		padding: 20px 0;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 
-	#learn button {
+	.menu_item {
+		padding: 10px 30px;
+	}
+
+	.menu_button_tablet {
+		display: none;
+	}
+
+	.menu_button_desktop {
+		display: block;
 		font-family: "Poppins";
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: #ffffff;
+
+		background-color: #023047;
+		border-color: transparent;
+		border-radius: 25px;
+		width: 145px;
+		height: 48px;
+		padding: 5px;
+	}
+
+	#learn {
+		display: flex;
+		flex-direction: row;
+		padding: 0 0 0 80px;
+		margin-top: 50px;
+	}
+
+	.learn_contained {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.learn_mobile_tablet {
+		display: none;
+	}
+
+	.learn_desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.learn_desktop_title {
+		font-family: Raleway;
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 63px;
+		letter-spacing: 0em;
+		text-align: left;
+
+		margin: 0;
+		margin-top: 0;
+	}
+
+	.learn_desktop_p {
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: 0em;
+
+		text-align: left;
+		margin: 30px 0 60px;
+	}
+
+	#learn button {
+		font-family: Poppins;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 27px;
+		letter-spacing: 0em;
+		text-align: left;
+
 		letter-spacing: 0em;
 		text-align: center;
 		color: #ffffff;
@@ -1182,183 +1256,137 @@ footer p {
 		border-radius: 25px;
 		width: 171px;
 
+		align-self: flex-start;
 		padding: 12px;
-		margin: 15px;
+		margin: 0;
 	}
 
 	.stadistics_photo {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 		overflow: hidden;
-		padding: 0 0 0 30px;
+		padding: 0;
 	}
 
 	#learn img {
-		width: 306px;
-		margin-right: -300px;
+		width: 446px;
+		margin-right: 0;
 	}
+
 	.numbers {
+		display: none;
+	}
+
+	.numbers_desktop {
+		display: flex;
+		flex-direction: column;
+
 		padding: 110px 0 60px;
 	}
 
-	.numbers h1 {
+	.numbers_desktop h1 {
 		font-family: Poppins;
-		font-size: 30px;
+		font-size: 36px;
 		font-weight: 700;
-		line-height: 38px;
+		line-height: 45px;
 		letter-spacing: 0em;
 		text-align: center;
+
 		color: #023047;
 		margin: 0;
 	}
 
-	.numbers p {
+	.numbers_desktop p {
 		font-family: Poppins;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 400;
-		line-height: 18px;
+		line-height: 20px;
 		letter-spacing: 0em;
 		text-align: center;
 		color: #023047;
 		margin: 0;
+		width: 115px;
 	}
 
-	.students_enrolled {
+	.students_enrolled_desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		background-color: #ffff;
 		border-color: transparent;
 		border-radius: 30px;
 
-		margin: 0;
-		padding: 10px 20px 10px;
+		margin: 20px 0 20px 40px;
+		padding: 15px 50px 15px;
 	}
 
-	.rating {
+	.rating_desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		background-color: #ffff;
 		border-color: transparent;
 		border-radius: 30px;
-		margin: 70px 0 0;
-		padding: 10px 20px 10px;
+		margin: 100px 50px 0 0;
+		padding: 15px;
 	}
 
 	#students {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row-reverse;
 		align-items: center;
-		padding: 80px 30px;
+		padding: 80px;
+	}
+
+	.students_title_p {
+		display: none;
+	}
+
+	.students_title_p_desktop {
+		display: flex;
+		flex-direction: column;
+		margin-left: 100px;
 	}
 
 	#students h1 {
-		font-family: "Raleway";
-		font-size: 30px;
+		font-family: Raleway;
+		font-size: 60px;
 		font-weight: 900;
-		line-height: 36px;
+		line-height: 72px;
 		letter-spacing: 0em;
 		text-align: left;
+		
+		letter-spacing: 0em;
+		text-align: left;
+		align-self: flex-start;
 		color: #023047;
 	}
 
 	#students p {
 		font-family: Poppins;
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: 400;
-		line-height: 32px;
+		line-height: 40px;
+		letter-spacing: 0em;
+		text-align: left;
+		
 		letter-spacing: 0em;
 		text-align: left;
 		color: #023047;
 		padding: 20px 0 20px;
 	}
 
-	.comments {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 20px;
-	}
-	.comment_line {
-		position: absolute;
-		height: 550px;
-		width: 35px;
-		border-radius: 20px;
-		background-color: #023047;
-		margin-left: 55px;
-		align-self: flex-start;
-		z-index: -1;
-	}
-
-	.comments h2 {
-		font-family: "Raleway";
+	.students_button_desktop {
+		font-family: Poppins;
 		font-size: 18px;
-		font-weight: 900;
+		font-weight: 700;
 		line-height: 27px;
 		letter-spacing: 0em;
 		text-align: left;
-		color: #ffffff;
-		border-radius: 30px;
-	}
-
-	.comments h3 {
-		font-family: "Raleway";
-		font-size: 18px;
-		font-weight: 900;
-		line-height: 22px;
-		letter-spacing: 0em;
-		text-align: left;
-		color: #023047;
-		padding: 20px 30px 20px;
-		margin: 0;
-	}
-
-	.comments h4 {
-		font-family: "Raleway";
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 17px;
-		letter-spacing: 0em;
-		text-align: left;
-		color: #023047;
-		padding: 0 30px 30px;
-		margin: 0;
-	}
-
-	.comment_1,
-	.comment_2 {
-		border-radius: 24px;
-		box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
-		margin: 25px;
-		width: 100%;
-	}
-
-	.comment_1 h2 {
-		background-color: #6f7dfb;
-		padding: 30px;
-		margin: 0;
-	}
-
-	.comment_2 h2 {
-		background-color: #da722c;
-		padding: 30px 60px;
-		margin: 0;
-	}
-
-	.student_image_1 {
-		position: absolute;
-		margin-top: 90px;
-		margin-left: 40px;
-		width: 110px;
-	}
-
-	.student_image_2 {
-		position: absolute;
-		margin-top: 75px;
-		margin-left: 40px;
-		width: 110px;
-	}
-
-	#students button {
-		font-family: "Poppins";
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 24px;
+		
 		letter-spacing: 0em;
 		text-align: center;
 		color: #ffffff;
@@ -1371,6 +1399,110 @@ footer p {
 		padding: 12px;
 		margin: 15px;
 		align-self: flex-end;
+	}
+
+	.comments {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+
+	}
+	.comment_line {
+		position: absolute;
+		height: 550px;
+		width: 35px;
+		border-radius: 20px;
+		background-color: #023047;
+		margin-left: 90px;
+		align-self: flex-start;
+		z-index: -1;
+	}
+
+	.comments h2 {
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 27px;
+		letter-spacing: 0em;
+		text-align: left;
+		
+
+		color: #ffffff;
+		border-radius: 30px;
+		padding: 0 100px;
+	}
+
+	.comments h3 {
+		font-family: Raleway;
+		font-size: 24px;
+		font-weight: 900;
+		line-height: 29px;
+		letter-spacing: 0em;
+		text-align: left;
+		
+		color: #023047;
+		padding: 20px 30px 20px;
+		margin: 0;
+	}
+
+	.comments h4 {
+		font-family: Raleway;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
+
+		color: #023047;
+		padding: 0 30px 30px;
+		margin: 0;
+	}
+
+	.comment_1 {
+		border-radius: 24px;
+		box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+		margin: 25px;
+		width: 100%;
+	}
+
+	.comment_2 {
+		border-radius: 24px;
+		box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+		margin: 25px;
+		margin-left: 100px;
+		width: 100%;
+	}
+
+	.comment_1 h2 {
+		background-color: #6f7dfb;
+		padding: 30px;
+		margin: 0;
+		
+	}
+
+	.comment_2 h2 {
+		background-color: #da722c;
+		padding: 30px;
+		margin: 0;
+	}
+
+	.student_image_1 {
+		position: absolute;
+		margin-top: 90px;
+		margin-left: 30px;
+		width: 130px;
+	}
+
+	.student_image_2 {
+		position: absolute;
+		margin-top: 60px;
+		margin-left: 30px;
+		width: 130px;
+	}
+
+	.students_button {
+		display: none;
 	}
 
 	#courses {
@@ -1379,33 +1511,50 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 	}
 
-	#courses img {
-		width: 352px;
+	
+
+	.courses_image {
+		display: none;
+	}
+
+	.courses_image_tablet {
+		display: block;
+		width: 632px;
 		padding: 0;
 		margin: 0;
 	}
 
-	#courses h1 {
+	.courses_h1 {
+		display: none;
+	}
+
+	.courses_h1_desktop{
+		display: block;
 		font-family: Raleway;
-		font-size: 30px;
+		font-size: 40px;
 		font-weight: 900;
-		line-height: 36px;
+		line-height: 48px;
 		letter-spacing: 0em;
 		text-align: center;
 		color: #ffff;
-		padding: 20px;
+		padding: 40px;
+		margin: 0px;
 	}
 
 	#courses h2 {
 		font-family: Raleway;
-		font-size: 24px;
+		font-size: 30px;
 		font-weight: 900;
-		line-height: 36px;
+		line-height: 45px;
 		letter-spacing: 0em;
 		text-align: left;
+
 		color: #023047;
+		padding-right: 0;
+		margin: 0;
 	}
 
 	#courses p {
@@ -1414,16 +1563,19 @@ footer p {
 		font-weight: 900;
 		line-height: 24px;
 		letter-spacing: 0em;
-		text-align: left;
+		text-align: right;
+
 		color: #023047;
+		margin: 0;
+		width: 120px;
 	}
 
 	.game_design,
 	.game_engine {
 		background-color: #ffffff;
 		border-radius: 50px;
-		margin: 0 0 70px;
-		padding: 0 30px 30px;
+		margin: 0 70px 70px;
+		padding: 0 30px;
 	}
 
 	.course_name {
@@ -1431,10 +1583,12 @@ footer p {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		padding: 20px 10px;
+		padding-bottom: 40px;
 	}
 
 	#courses button {
-		font-family: "Poppins";
+		font-family: Poppins;
 		font-size: 16px;
 		font-weight: 700;
 		line-height: 24px;
@@ -1448,21 +1602,25 @@ footer p {
 		width: 171px;
 
 		padding: 12px;
-		margin: 0 30px 0 0;
+		margin: 0 70px 0 0;
 		align-self: flex-end;
 	}
 
 	#app {
-		padding: 40px 30px;
+		display: flex;
+		flex-direction: column;
+		padding: 80px 0;
 	}
 
 	#app h1 {
 		font-family: Raleway;
-		font-size: 30px;
+		font-size: 60px;
 		font-weight: 900;
-		line-height: 36px;
+		line-height: 72px;
 		letter-spacing: 0em;
 		text-align: center;
+		
+		margin: 0;
 		color: #023047;
 	}
 
@@ -1473,18 +1631,29 @@ footer p {
 		line-height: 32px;
 		letter-spacing: 0em;
 		text-align: center;
+		
+
 		color: #023047;
-		padding: 20px;
+		padding: 0px;
+		margin: 20px;
+	}
+
+	.app_images {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	#app img {
-		margin: 10px 0;
+		width: 310px;
+		margin: 20px;
 	}
 
 	footer {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
+		flex-wrap: wrap;
 
 		background-color: #070917;
 		margin: 0;
@@ -1500,7 +1669,7 @@ footer p {
 		letter-spacing: 0em;
 		text-align: center;
 		color: #da722c;
-		padding: 10px;
+		padding: 0;
 		margin: 0;
 	}
 
@@ -1510,7 +1679,9 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
+		align-items: flex-start;
 		padding: 10px;
+		margin: 10px 80px;
 	}
 
 	.item {
@@ -1521,13 +1692,19 @@ footer p {
 		letter-spacing: 0em;
 		text-align: center;
 		color: #ffff;
+		padding: 10px 30px;
 	}
 
 	.social_networks {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		padding: 10px;
+		padding: 10px 30px;
+		margin: 0;
+	}
+
+	.social_networks img {
+		margin: 0 10px;
 	}
 
 	footer input {
@@ -1542,7 +1719,7 @@ footer p {
 		border-color: none;
 		border-radius: 10px;
 		height: 15px;
-		margin: 10px;
+		margin: 10px 30px;
 		width: 300px;
 		padding: 15px;
 	}
@@ -1565,7 +1742,7 @@ footer p {
 		width: 150px;
 
 		padding: 5px;
-		margin: 15px;
+		margin: 10px 30px;
 	}
 
 	footer p {
