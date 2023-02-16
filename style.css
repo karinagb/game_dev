@@ -15,6 +15,7 @@ body {
 .background_container {
 	color: #ffffff;
 	background-image: linear-gradient(#6f7dfb, #28328f);
+	width: 100%;
 }
 
 .menu {
@@ -954,6 +955,7 @@ footer p {
 
 	.game_design,
 	.game_engine {
+
 		background-color: #ffffff;
 		border-radius: 50px;
 		margin: 0 0 70px;
@@ -1082,6 +1084,7 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		justify-content: center;
 	
 		background-color: #070917;
 		margin: 0;
@@ -1093,7 +1096,7 @@ footer p {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-items: center;
+		align-items: flex-start;
 	
 	}
 
@@ -1273,6 +1276,7 @@ display: none;
 	#learn {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 		padding: 0 0 0 60px;
 		margin-top: 50px;
 	}
@@ -1641,6 +1645,10 @@ display: none;
 
 	.game_design,
 	.game_engine {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 		background-color: #ffffff;
 		border-radius: 50px;
 		margin: 0 10px 70px;
@@ -1769,8 +1777,10 @@ display: none;
 	footer {
 		display: flex;
 		flex-direction: column;
-		background-color: #070917;
+		align-items: center;
 		justify-content: center;
+		background-color: #070917;
+
 		margin: 0;
 		padding: 40px 0;
 		width: 100%;
@@ -1890,8 +1900,14 @@ display: none;
 		margin-top: 50px;
 	}
 	
+
 	.game_design,
 	.game_engine {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
 		background-color: #ffffff;
 		border-radius: 50px;
 		margin: 0 50px 70px;
