@@ -1653,6 +1653,7 @@ display: none;
 		border-radius: 50px;
 		margin: 0 10px 70px;
 		padding: 0 15px;
+		width: 450px;
 	}
 
 	.courses_image_mobile {
@@ -1912,5 +1913,6 @@ display: none;
 		border-radius: 50px;
 		margin: 0 50px 70px;
 		padding: 0 50px;
+		width: 450px;
 	}
  }
